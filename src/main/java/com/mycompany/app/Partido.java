@@ -4,7 +4,8 @@ public class Partido {
     private Arbitro arbitro;
     private Arbitro arbitroLinea1;
     private Arbitro arbitroLinea2;
-    private Arbitro abritroAsistente;
+    private Arbitro arbitroAsistente;
+    private int tarjetasCantidad;
     
     public Partido(Arbitro aribitro, Arbitro arbitroLinea1, Arbitro arbitroLinea2, Arbitro arbitroAsistente) {
         setArbitro(arbitro);
@@ -29,12 +30,20 @@ public class Partido {
         this.arbitroLinea2 = arbitroLinea2;
     }
 
-    public Arbitro getAribitroLinea2() { return arbitroLinea2; }
+    public Arbitro getArbitroLinea2() { return arbitroLinea2; }
 
-    private void setArbitroLAsistente(Arbitro abritroAsistente) {
-        this.abritroAsistente = abritroAsistente;
+    private void setArbitroLAsistente(Arbitro arbitroAsistente) {
+        this.arbitroAsistente = arbitroAsistente;
     }
 
-    public Arbitro getAribitroAsistente() { return abritroAsistente; }
+    public Arbitro getAribitroAsistente() { return arbitroAsistente; }
+
+    public void agregar(Tarjeta tarjeta) {
+        this.tarjetasCantidad++;
+    }
+
+    public int getTarjetasCantidad() {
+        return tarjetasCantidad;
+    }
 
 }

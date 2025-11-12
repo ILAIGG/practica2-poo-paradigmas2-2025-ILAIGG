@@ -5,6 +5,8 @@ public class Var {
     private AsistenteVar asistenteVar1;
     private AsistenteVar asistenteVar2;
     private AsistenteVar asistenteVar3;
+    private int cantidadTarjetasAmarillas;
+    private int cantidadTarjetasRojas;
 
     public Var(AsistenteDeVideo asistenteDeVideo, AsistenteVar asistenteVar1, AsistenteVar asistenteVar2, AsistenteVar asistenteVar3) {
         setAsistenteDeVideo(asistenteDeVideo);
